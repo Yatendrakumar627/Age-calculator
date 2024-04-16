@@ -1,6 +1,4 @@
-
-
- * {
+* {
   margin: 0;
   padding: 0;
   font-family: 'Poppins', sans-serif;
@@ -20,11 +18,11 @@
 
 .calculator {
   width: 100%;
-  max-width: 80%; /* Adjusted for responsiveness */
+  max-width: 80% /* Adjusted for responsiveness */
 }
 
 .calculator h1{
-  font-size: 60px;
+  font-size: 7vh;
 }
 
 .calculator h1 span {
@@ -32,35 +30,37 @@
 }
 
 .input-box {
-  margin-top: 3vw; /* Responsive margin */
-  padding: 4vw; /* Responsive padding */
-  border-radius: 2vw; /* Responsive border radius */
+  margin-top: 40px;
+  padding: 35px;
+  border-radius: 10px;
   background: rgba(255, 255, 255, 0.3);
   display: flex;
   align-items: center;
+  max-width: 400px; /* Maximum width of the input box for larger screens */
+  width: 100%; /* Adjusted for responsiveness */
 }
 
 .input-box input {
   flex: 1;
-  margin-right: 3vw; /* Responsive margin */
-  padding: 3vw; /* Responsive padding */
-  font-size: 3vw; /* Responsive font size */
+  margin-right: 20px;
+  padding: 14px 20px;
   border: 0;
   outline: 0;
-  border-radius: 2vw; /* Responsive border radius */
+  font-size: 18px;
+  border-radius: 5px;
   position: relative;
+  max-width: calc(100% - 110px); /* Maximum width of input box - button width */
 }
 
 .input-box button {
   background: #ffff76;
   border: 0;
   outline: 0;
-  padding: 4vw 8vw; /* Responsive padding */
-  border-radius: 2vw; /* Responsive border radius */
+  padding: 15px 30px;
+  border-radius: 5px;
   font-weight: 500;
   color: #333;
   cursor: pointer;
-  font-size: 3vw; /* Responsive font size */
 }
 
 .input-box input::-webkit-calendar-picker-indicator {
@@ -71,18 +71,16 @@
   width: auto;
   height: auto;
   position: absolute;
-  background-position: calc(100% - 1vw); /* Responsive position */
-  background-size: 4vw; /* Responsive size */
+  background-position: calc(100% - 10px);
+  background-size: 30px;
   cursor: pointer;
 }
 
 #result {
-  font-size: 20px;/* Responsive font size */
-  text-align: center; /* Center align on all devices */
-  margin-top: 20px;
+  font-size: 20px;
+  text-align: center;
 }
 
 #result span {
   color: #ffff76;
 }
-
